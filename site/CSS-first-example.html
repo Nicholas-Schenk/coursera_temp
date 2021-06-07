@@ -4,6 +4,7 @@
         <title>CSS</title>
         <meta charset="utf-8">
         <style>
+            /* SIMPLE STYLES */
             .MyClass {
                 color:red;
                 text-align: center;
@@ -20,6 +21,19 @@
             span {
               font-size: large;  
             }
+
+            /* COMBINED SELECTORS */
+
+
+            /* Every item which is SecondClass a direct descendant of a paragraph will have a font size of 30 while evry ThirdClass item that is a descendant of a paragraph will be blue violet */
+            p > .SecondClass{
+                font-size: 30px;
+            }
+
+            p .ThirdClass{
+                color: blueviolet;
+            }
+
         </style>
     </head>
     <body>
@@ -36,6 +50,38 @@
         <p id="different_paragraph">This will use the different_paragraph styling!!</p>
 
         <span>This is a span. therefore it uses the "span" CSS rule</span>
+
+
+        <p>
+            <span class="SecondClass"> This is a second class span. It is a direct child of a paragraph meaning its font size will be 30px</span>
+        </p>
+
+        <p>
+            <span>
+                <span class="SecondClass"> This is a second class span that is a direct child of a span and a descendant of a paragraph. Since it is not a direct child it is not 30px</span>
+            </span>
+        </p>
+
+        <p>
+            <span class="ThirdClass"> This is a third class span. It is a direct child of a paragraph meaning it is blueviolet</span>
+        </p>
+
+        <p>
+            <span>
+                <span class="SecondClass"> This is a third class span that is a direct child of a span and a descendant of a paragraph. It is still blue violet</span>
+            </span>
+        </p>
+
+        <p>
+            <span>
+                <span class="ThirdClass SecondClass"> This is a second and third class span that is a direct child of a span and a descendant of a paragraph. Since it is not a direct child it is not 30px, but it is ultraviolet</span>
+            </span>
+        </p>
+
+        <p>
+                <span class="ThirdClass SecondClass"> This is a second and third class span that is a direct child of a paragraph. Since it is a direct child it is 30px, and it is ultraviolet</span>
+            
+        </p>
       
     </body>
 </html>
