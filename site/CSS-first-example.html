@@ -38,12 +38,50 @@
                 color: red;
             }
 
+
+
+            /*Psuedo-Selectors*/
+            /* any li in header should have no dot*/
+            header li{
+                list-style: none;
+            }
+            /*Style anchor tags in either state the same way */
+            a:link, a:visited {
+                color: white;
+                background-color: teal;
+                display: block;
+                width: 150px;
+                border: 2px solid black;
+                border-radius: 10px;
+                padding-top: 5px;
+                text-align: center;
+            }
+            /* set style for on hover and on click */
+            a:hover, a:active {
+                background-color: darkmagenta;
+                width: 200px;
+            }
+
         </style>
     </head>
     <body>
+        <h1>This shows off some Psuedo-Selectors</h1>
+        <header>
+            <ul>
+            <li><a href="CSS-first-example.html">Link to this page</a></li>
+            <li><a href="duncan-donuts.png"> Link to the duncan-donuts image</a></li>
+            </ul>
+        </header>
         <h1>
-            This shows off some CSS.
+            This shows off some general CSS + CSS selectors.
         </h1>
+
+
+
+
+
+
+
         <div>
             <p class="MyClass"> Anything using my class will have this style!</p>
         </div>
