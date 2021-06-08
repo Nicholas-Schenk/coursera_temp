@@ -31,6 +31,30 @@
             }
 
 
+            /* this displays a bunch of text styling */
+            .style {
+                /* list. because not all will have fonts */
+                font-family: Arial, Helvetica, sans-serif;
+                color: #ff4d4d;
+                font-style: italic;
+                font-weight: bolder;
+                font-size: 24px;
+                /* can do a bunch of stuff to it! */
+                text-transform: capitalize;
+                text-align: center;
+            }
+
+
+            .style2 {
+                font-size: 120%; /* make font be 120% default size*/
+            }
+
+            .style3 {
+                font-size: 2em; /* make font twice as large as regular text */
+                /* this type of text specification multiplies! aka if we have another child inside a 2em. in order to make 4 em just set inner to 2em. setting to 4em would make it 8em! */
+            }
+
+
         </style>
     </head>
     <body>
@@ -42,5 +66,8 @@
         <!--inline styling. shouldn't use this as it's not reusable!!-->
         <p style="text-align: center;">We also can specify style directly in the element!(centered) As we can see, all of the paragraphs will have the font family specified in my_css.css, but since the background color is overridden in the header here the background has become aquamarine</p>
         <p style="background-color: blueviolet;"> This paragraph has a background color of blueviolet since it overrides the previous 2 background colors</p>
+
+        <p class="style"> Here we show off some various different things you can do to style font.</p>
+    
     </body>
 </html>
