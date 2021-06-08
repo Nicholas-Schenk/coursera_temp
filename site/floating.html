@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Positioning Elements by Floating</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            section{
+                /* nothing should be allowed to be floating to the left of a section */
+                clear: left;
+
+            }
+            div{
+                background-color: #00FFFF ;
+            }
+            span{
+                width: 50%;
+                border-radius: 20px;
+                border: black solid 2px;
+            }
+            p{
+                width: 50px;
+                height: 50px;
+                border: 1px solid black;
+                float: left;
+                margin-right: 10px;
+            }
+            #p1{
+                background-color: #a52a2a;
+                
+            }
+            #p2{
+                background-color: #deb887;
+            }
+            #p3{
+                background-color: #5f9ea0;
+                clear: left;
+            }
+            #p4{
+                background-color: #ff7f50;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Floating elements!</h1>
+        <div>
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+            <p id="p4"></p>
+            <!-- When we use float, it takes the items out of the regular document flow, which means that the only thing giving the divv any height, etc, is the section and its text!-->
+            <section>This is regular content continuing after the paragraph boxes </section>
+            <span>
+                Here is an example span, lets see what this looks like
+            </span>
+            <span>
+                Here is the second span it should also look pretty interesting I think but not sure idk.
+            </span>
+        </div>
+    </body>
+</html>
