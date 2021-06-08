@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Background</title>
+        <style>
+            #bg {
+                width: 500px;
+                height: 500px;
+                background-color: cadetblue;
+                /* path is relative to the CSS file 
+
+                background-image: url("duncan-donuts.png");
+                background-repeat: no-repeat;
+                /* Vertical Horizontal*/
+                /*Specifying only one makes other default to center 
+                background-position: top right; */
+
+                /* can do the same thing all together. overrides all specified fields ONLY. background takes over other like bacjground color unless directly in background property */
+                background: url("duncan-donuts.png") no-repeat right center blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The background property</h1>
+        <div id="bg">Background properties are fun</div>
+    </body>
+</html>
