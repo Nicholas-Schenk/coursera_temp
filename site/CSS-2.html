@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>More CSS stuff!</title>
+
+        <!--External stylesheets are the best and most reusable-->
+        <link rel="stylesheet" href="my_css.css">
+
+
+        <!--Specifying style here only really works for this page, would have to copy and paste this code if we wanted another page to look the same! Gross!-->
+        <!--Only really would ever be used to override external styles but that is still not really a good practice-->
+        <style>
+            h2{
+                color:maroon;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>This is an h2, it's maroon!</h2>
+        
+        <!--inline styling. shouldn't use this as it's not reusable!!-->
+        <p style="text-align: center;">We also can specify style directly in the element!(centered)</p>
+    </body>
+</html>
