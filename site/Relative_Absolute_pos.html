@@ -12,7 +12,11 @@
             h1{
                 margin-bottom: 15px;
             }
+            /* needs to be relactive in order for other relative to work */
+            /* by setting top here, moves all children as well! */
             div#container{
+                position:relative;
+                top: 60px;
                 background-color: #00FFFF;
             }
             p{
@@ -21,14 +25,25 @@
                 border: 1px solid black;
                 margin-bottom: 15px;
             }
+            /* moves this, but does not take it out of flow */
             #p1{
                 background-color: #a52a2a;
+                position:relative;
+                top:65px;
+                left:65px;
                 
             }
             #p2{
                 background-color: #deb887;
             }
+
+            /* taken out of Document flow, but not in pos we want! */
+            /* since div that is p's parent does not have positioning set to relative, it goes all the way to the html */
             #p3{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+
                 background-color: #5f9ea0;
                 clear: left;
             }
