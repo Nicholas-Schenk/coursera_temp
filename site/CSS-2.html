@@ -12,16 +12,32 @@
         <!--Only really would ever be used to override external styles but that is still not really a good practice-->
         <style>
             h2{
-                color:maroon;
+                color:maroon !important;
             }
 
             p{
                 background-color: aquamarine;
             }
+
+
+            /* COMPETING STYLES! */
+
+            header.nav div {
+                color: blue;
+            }
+
+            div {
+                color: red;
+            }
+
+
         </style>
     </head>
     <body>
-        <h2>This is an h2, it's maroon!</h2>
+        <header class="nav">
+            <div>The blue class was mroe specific so it won!</div>
+        </header>
+        <h2 style="color: blue">This is an h2, it's maroon because we made h2 rule in the page important!</h2>
         
         <!--inline styling. shouldn't use this as it's not reusable!!-->
         <p style="text-align: center;">We also can specify style directly in the element!(centered) As we can see, all of the paragraphs will have the font family specified in my_css.css, but since the background color is overridden in the header here the background has become aquamarine</p>
