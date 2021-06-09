@@ -16,5 +16,23 @@
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         <h1>Hello!</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Col-md means that when we go below 992 px, the pixels will stack-->
+                <!-- col-sm-6 means that when we go below 992, the cols will instead take up half the screen. if we were instead to go down to < ~700px then they will go to just one per row-->
+                <div class="col-md-4 col-sm-6">Col 1</div> 
+                <div class="col-md-4 col-sm-6">Col 2</div>
+                <div class="col-md-4 col-sm-6">Col 3</div>
+
+                <!--If we instead use xs, col will stay no matter the size of the screen-->
+            </div>
+            <div class="row">
+                <div class="col-4">Col 1</div>
+                <div class="col-4">Col 2</div>
+                <div class="col-4"> Col 3</div>
+
+               
+            </div>
+        </div>
     </body>
 </html>
