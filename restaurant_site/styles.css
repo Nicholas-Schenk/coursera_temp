@@ -28,6 +28,12 @@ h2{
 }
 h4{
     font-size: 3vw;
+    font-family: 'Nunito Sans';
+}
+
+h5{
+    font-size: 2vw;
+    font-family: 'Nunito Sans';
 }
 p{
     font-family: "Nunito Sans";
@@ -49,10 +55,10 @@ p{
     background-color: white;
 }
 
-#about-us{
+#get-psyche{
     background-color: rgba(211, 211, 211, 0.616);
 }
 
-#get-psyche{
+#about-us{
    background-color: #fff;
 }
