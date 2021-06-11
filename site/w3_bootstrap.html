@@ -8,14 +8,141 @@
     
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-        
+        <h3>Bootstrap Grid basics</h3>
         <p>In Bootstrap, everything is wrapped by a containing element</p>
-        <div class="container" style="height: 25px; background-color: aqua;">
-            <p>This is a container class. it is a fixed width</p>
+        <div class="container" style="background-color: aqua;">
+            <p>This is a container class. it is a fixed width
+                These are the sizes it will be on different screens:
+                <br>xs (&lt;576): 100%	<br>s(&geq; 576px): 540px	<br>m(&geq; 768px): 720px	<br>l(&geq; 992px): 960px	<br>xl(&geq; 1200px): 1140px
+            </p>
         </div>
         <div class="container-fluid" style="background-color: cadetblue;">
             <p> This is a container-fluid. it stretches across the whole screen</p>
         
         </div>
+        <br>
+        <p>By default, containers will have 15px left and right padding, with no top or bottom padding. Therefore we often use <strong>spacing utilities</strong> such as extra padding or margins. for example, adding .pt-3 adds a top margin of 16px</p>
+        <div class="container pt-3" style="background-color: cyan;">Top margin is 16px!</div>
+        <br>
+        <p>Other utilities, such as borders and colors are also often used with conatiners</p>
+        <div class="container p-3 my-3 border"><p>Has a border and some extra padding and margins</p></div>
+        <div class="container p-3 my-3 bg-dark text-white"><p>Has some extra padding and margins + white text and black background</p></div>
+        <br>
+        <br>
+        <p>
+            Also have different size containers like container-sm, etc. <br>
+        .container-sm	100%	540px	720px	960px	1140px <br>
+.container-md	100%	100%	720px	960px	1140px <br>
+.container-lg	100%	100%	100%	960px	1140px <br>
+.container-xl	100%	100%	100%	100%	1140px
+        </p>
+
+        <div class="container-sm border">.container-sm</div>
+        <div class="container-md border">.container-md</div>
+        <div class="container-lg border">.container-lg</div>
+        <div class="container-xl border">.container-xl</div>
+
+        <p>Basic Grids in bootstrap: You should have a div whose class is row and inside that have a bunch of cols: col-*-* where the first start is  either nothing or sm/md/lg/xl and the second is a number between 1 and 12 representing how much of the screen it takes up</p>
+
+        <div class="container-fluid bg-dark text-white border" style="border-color: darkgray;">
+            <div class="row">
+                <div class="col-sm-7">7 wide</div>
+                <div class="col-sm-5">5 wide</div>
+            </div>
+            <div class="row">
+                <div class = "col-lg-4">4 wide</div>
+                <div class = "col-lg-4">4 wide</div>
+                <div class = "col-lg-4">4 wide</div>
+            </div>
+        </div>
+
+        <p>note how the 4 wide cols collapse much sooner. this is because they are l cols instead of sm like the others</p>
+        <br>
+        <br>
+        <p>On top of the xs option (col-*), you can also jut make cols with nothing and they will be equal width. These are just the class "col", they never collapse.</p>
+        <div class="container-fluid bg-dark text-white border" style="border-color: darkgray;">
+            <div class="row">
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <hr>
+        <h3>Bootstrap Text/Typography</h3>
+        <p>In bootstrap, the default font-size is 16px and its line-height is 1.5. The default font-family is Helvetica Neue, Helvaetica, Arial, sans-serif. All &lt;p&gt; elements have no margin top but do have margin-bottom of 1 rem (16px)</p>
+        <p>Its h1-h6 go: 2.5 rem, 2rem, 1.75rem, 1.5 rem, 1.25 rem, 1rem and all are bold </p>
+        <br>
+        <p>Bootstrap also gives you <strong>Display Headings</strong> which are meant to standout more, they are display-1 -&gt; display-4</p>
+        <h1 class="display-4"> Display 4 is still very big! <small>here we have text in &lt;small&gt; tags. it is smaller and lighter(compared to normal heading, but not display)!</small></h1>
+        <br>
+        <p>We can also use the <mark>mark</mark> tag to highlight text</p>
+        <p><abbr>abbr puts a dotted border bottom under text</abbr></p>
+
+
+        <br>
+        <blockquote class="blockquote">
+            <p>'We also are given a nice way of quoting with the "blockquote" class'</p>
+            <footer class="blockquote-footer">This is the blockquote-footer class</footer>
+        </blockquote>
+
+        <br>
+        <p>This is the dl tag, a description list: </p>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>Drink</dd>
+        </dl>
+
+        <p><code>this is the "code" style tag</code> </p>
+
+        <p>
+            <pre>Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.</pre>
+        </p>
+
+        <p>
+            <strong>here are a bunch of other styles:</strong>
+            <pre>.font-weight-bold	Bold text	
+.font-weight-bolder	Bolder text	
+.font-italic	Italic text	
+.font-weight-light	Light weight text	
+.font-weight-lighter	Lighter weight text	
+.font-weight-normal	Normal text	
+.lead	Makes a paragraph stand out	
+.small	Indicates smaller text (set to 80% of the size of the parent)	
+.text-left	Indicates left-aligned text	
+.text-*-left	Indicates left-aligned text on small, medium, large or xlarge screens	
+.text-break	Prevents long text from breaking layout	
+.text-center	Indicates center-aligned text	
+.text-*-center	Indicates center-aligned text on small, medium, large or xlarge screens	
+.text-decoration-none	Removes the underline from a link	
+.text-right	Indicates right-aligned text	
+.text-*-right	Indicates right-aligned text on small, medium, large or xlarge screens	
+.text-justify	Indicates justified text	
+.text-monospace	Monospaced text	
+.text-nowrap	Indicates no wrap text	
+.text-lowercase	Indicates lowercased text	
+.text-reset	Resets the color of a text or a link (inherits the color from its parent)	
+.text-uppercase	Indicates uppercased text	
+.text-capitalize	Indicates capitalized text	
+.initialism	Displays the text inside an abbr element in a slightly smaller font size	
+.list-unstyled	Removes the default list-style and left margin on list items (works on both ul and ol). This class only applies to immediate children list items (to remove the default list-style from any nested lists, apply this class to any nested lists as well)	
+.list-inline	Places all list items on a single line (used together with .list-inline-item on each li elements)	
+.pre-scrollable	Makes a pre element scrollable
+</pre>        
+</p>
+
+
+<br>
+<br>
+
+
+        
     </body>
 </html>
