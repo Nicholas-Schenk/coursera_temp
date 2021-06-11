@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Examples</title>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <!--To access an element, JS can use the document.getElementById() method-->
+        <!--The id attribute defines the HTML elem, the innerHTML property defines the HTML content-->
+        <p id="demo"> I'm a paragraph, please don't click that button and kill me!</p>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Oof, im dead now :('"> This will change the paragraphs text. </button>
+
+
+        <!--Document.write may be useful for testing, but it deletes all other existing HTML so not good in practice-->
+        <button type="button" onclick="document.write(5+6)"> This will delete all other text </button>
+
+        <!-- window.alert() uses an alert box to display data-->
+        <!--Technically dont need window keyword. window refers to global scope object-->
+        <button type="button" onclick="window.alert('this is an alert')"> This will show an alert </button>
+
+
+        <button type="button" onclick="console.log('You clicked the button ya nerd!')"> This log a fun message in the console </button>
+
+        <!--If you wanna print out the webpage, use window.print()-->
+
+        <button type="button" onclick="window.print()"> This will let you print the entire page </button>
+
+
+
+
+        <p>Here's a list of key words in JS: <br>
+        break <br>
+        continue <br>
+        debugger: stops the execution of JS and calls (if available) te debugging function <br>
+        do/while <br>
+        for <br>
+        function (declares a function) <br>
+        if/else <br>
+        return <br>
+        switch <br>
+        try/catch <br>
+        var: declares a variable. JS is weird.
+
+        <br>
+        <br>
+        <p>Java script defines 2 type of values: fixed and variable <br>
+        Fixed values are called literals, variable values are called variables.</p>
+
+        <br>
+        <p>Javascript variables literally have no type, you have to remember what they are! Javascript is type sensitive</p>
+
+
+        <p>NOw there exists the keywords const: to say that a var cannot be reassigned, and let which defines a variable with restricted scope. A let variable will only have "Block Scope" aka code inside the same {} as it can use it</p>
+        <p> You can define many variables in a single statement by using commas</p>
+        <p>In JS "undefined" is equivalent to null in other languages</p>
+        <p>addition as concactenation: when you add a string and non-strings, they will be combined together to make a string. aka 4+"5" = "45"</p>
+        <br>
+        <p>You can actually declare variables after you use them because javascript "hoists" these declarations to the top of the code.</p>
+
+        <p> const variables must be assigned a value when they are declared. However, you CAN change the properties of a constant object!!!</p>
+    </p>
+
+
+        
+
+
+
+
+    </body>
+</html>
