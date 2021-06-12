@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>W3 bootstrap examples</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <div class="container">
+        <h3>Bootstrap Images</h3>
+        <p>rounded, rounded-circle, img-thumbnail in order:</p>
+        <img src="duncan-donuts.png" alt="duncan" class="rounded" style="width: 100px;">
+        <img src="duncan-donuts.png" alt="duncan" class="rounded-circle" style="width: 100px;">
+        <img src="duncan-donuts.png" alt="duncan" class="img-thumbnail" style="width: 100px;">
+        </div>
+        <br>
+        <div class="container" style="height: 150px">
+        <p>float-left and float-right cause it to float</p>
+        
+            
+        <img src="duncan-donuts.png" alt="duncan" class="rounded float-left" style="width: 100px;">
+        <img src="duncan-donuts.png" alt="duncan" class="rounded-circle float-right" style="width: 100px;">
+            
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+        <div class="container">
+        <p>you can easily center images using mx-auto (margin-auto) and d-block (display:block)</p>
+        <img src="duncan-donuts.png" alt="duncan" class="rounded-circle mx-auto d-block" style="width: 100px;">
+        
+        <p>You can also make an image fit to the page by using img-fluid. the duncan picture is huge tho so i'll pass on including an example here</p>
+         
+        </div>
+
+        <div class="container">
+        <h3>Jumbotron</h3>
+        <p>a Jumbotron is essentially just a big grey box which "calls for extra attention". you can put essentially anything in a jumbotron</p>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+            <h1>use a div with class jumbotron</h1>
+            <p> this jumbotron is also jumbotron-fluid, meaning it is the size of the screen. it has a container in it so that the text has some margins</p>
+            </div>
+        
+        </div>
+
+
+        <div class="container">
+            <h3>Alerts</h3>
+
+            <p>They are created with a div which has the alert class, and also have contextual colors like other stuff ("alert-info", "alert-danger", etc)</p>
+            <div class="alert alert-success"> success alert</div>
+            <p>If you need to add a link (a) you should make it of class alert-link.</p>
+            <div class="alert alert-danger">Warning! <a href="#" class="alert-link"> This link should help.</a></div> 
+            <br>
+            <p>To make a closeable alert, you should add the alert-dismissible class. Then you need to add class = "close" and data-dismiss="alert" to a link/button element</p>
+            <div class="alert alert-warning alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                Warning! click the x to close this alert.
+            </div>
+
+            <br>
+            <p>Note that in the above example we used the "&amp;times;" symbol for the x rather than the character x</p>
+            <br>
+            <p>Animated Alerts: adding the classes fade and show will add a fading effect when closing the alert</p>
+            <div class="alert alert-warning alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                Warning! click the x to close this alert. Now i fade!!
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <h3>Buttons!</h3>
+            <p>Keeping with the trend, Bootstrap has the same styles for <code>&lt;button&gt;</code> elements. btn-* where * can be blank, primary, secondary, success, info, warning, danger, dark, light, link</p>
+            <button type="button" class="btn btn-success">Success button ex.</button>
+            <br>
+            <p>the button classes can also be used on  <code>&lt;a&gt;</code> or  <code>&lt;input&gt;</code> elements.If you are doing it for links you should specify the role="button"</p>
+            <a href="#" class="btn btn-primary" role="button">Link button ex.</a>
+
+            <br>
+            <br>
+            <p>Bootstrap also has outline buttons, which are specified by btn-outline-*</p>
+            <button type="button" class="btn btn-outline-secondary">"Secondary" button</button>
+            <p>Buttons can also be small or large!</p>
+            <button type="button" class="btn btn-sm btn-dark text-white"> small button</button>
+            <button type="button" class="btn btn-lg btn-dark text-white">large button</button>
+            <p>Buttons can also be block level(btn-block), meaning it will span the whole parent elem</p> 
+            
+            <button type="button" class="btn btn-block btn-dark text-white">block button</button>    
+            
+            <p>Buttons can also be active (set to appear pressed) or disabled (unclickable)</p>
+            <button type="button" class="btn btn-primary" disabled> disabled button</button>
+            <button type="button" class="btn btn-outline-danger active">active button</button>
+            <br>
+            <br>
+            <p>If you are making a link button, you must give it the class disabled. otherwise, put in the attribute.</p>
+
+
+
+        </div>
+        
+
+        
+
+
+
+    </body>
+</html>
