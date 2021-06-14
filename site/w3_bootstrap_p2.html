@@ -105,11 +105,135 @@
             <br>
             <br>
             <p>If you are making a link button, you must give it the class disabled. otherwise, put in the attribute.</p>
+            <br>
+            <p>Buttons can also be given a spinner element</p>
+            <button type = "button" class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span>
+                Loading
+            </button>
+            <button type = "button" class="btn btn-primary" disabled>
+                <span class="spinner-grow spinner-grow-sm"></span>
+                Loading
+            </button>
+            <br>
+            <br>
+            <p>Buttons can also be grouped together</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary" disabled> disabled button</button>
+                <button type="button" class="btn btn-outline-danger">active button</button>
+            </div>
+            <p>can also make the buttons small/large using btn-group-lg or btn-group-sm</p>
+            <p>can also make vertical groups with btn-group-vertical</p>
+            <p>can also add in a drop down</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary" disabled> disabled button</button>
+                <button type="button" class="btn btn-outline-danger">active button</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Dropdown</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Option 1</a>
+                        <a class="dropdown-item" href="#">Option 2</a>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"> Dropdown</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Option 1</a>
+                        <a class="dropdown-item" href="#">Option 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h3>Badges</h3>
+            <p>Badges can be used to add additional information to content.</p>
+            <p>EXAMPLE <span class="badge">NEW</span></p>
+            <p>they also look better when using contextual classes as well (badge-secondary, badge-primary, badge-danger, etc.)</p>
+            <p>EXAMPLE 2 <span class="badge badge-secondary">NEW</span></p>
+            <p>Add in the badge-pill class to make badges more round:</p>
+            <p>EXAMPLE 3 <span class="badge badge-warning badge-pill">Warning</span></p>
+            <p>Badges can also be inside of elements, such as buttons</p>
+            <button type="button" class="btn btn-outline-secondary">
+                Button Text <span class="badge badge-dark">Badge</span>
+            </button>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <h3>Progress Bars</h3>
+            <p>to create a default progress bar, add a progress class to a container element and add the progress bar class to its child element. </p>
+            <div class="progress">
+                <div class="progress-bar" style="width:70%"></div>
+            </div>
+            <p>You can change the height of the progress bar by setting the height attribute in both the progress and progress-bar elements</p>
+            <p>by writing something in the progress bar div, you can add text to a progress bar such as a numerical percentage of completion</p>
+            <p>By using any of the bootstrap background colors in the progress-bar you can change the color</p>
+            <div class="progress">
+                <div class="progress-bar bg-success" style="width:25%"></div>
+            </div>
+            <p>The class progress-bar-striped makes them striped</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-danger" style="width:25%"></div>
+            </div>
+            <p>The class progress-bar-animated will make it animated! (only works for striped progress bars)</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:85%"></div>
+            </div>
+
+            <p>Progress bars can also be stacked!</p>
+            <div class="progress">
+                <div class="progress-bar bg-success" style="width:25%">Photos</div>
+                <div class="progress-bar bg-dark" style="width:19%">Applications</div>
+                <div class="progress-bar bg-secondary" style="width: 13%">OS</div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>Spinners!</h3>
+            <p>You can create a spinner/loader using the spinner-border class:</p>
+            <div class="spinner-border"></div>
+            <p>To change the color of the spinner, use the text color utilities such as text-muted/text-dark/etc</p>
+            <div class="spinner-border text-danger"></div>
+            <div class="spinner-border text-success"></div>
+            <p>growing spinners. If you want this style of spinner instead, use the sinner-grow class</p>
+            <div class="spinner-grow text-muted"></div>
+            <p>As shown in the spinner buttons example, you can make a spinner smaller by doing spinner-grow-sm</p>
 
 
+            <br>
+            <br>
+            <br>
+            <h3>Basic Pagination</h3>
+            <p>If you have a site with many pages, may need to add this. Add the class pagination to a ul and add the class page-item to each li and page-link to each page link</p>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+            <p>add the class active if you want to highlight the current page</p>
+            <p>add the class disabled if you want to make a link unclickable</p>
+            <ul class="pagination">
+                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+            <p>pagination-lg and pagination-sm can be used to make it larger or smaller</p>
+            <p>Breadcrumbs are another form of pagination that look like this:</p>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a href="#">Summer 16</a></li>
+                <li class="breadcrumb-item"><a href="#">Drake</a></li>
+            </ul>
 
         </div>
-        
+        <br>
+
 
         
 
