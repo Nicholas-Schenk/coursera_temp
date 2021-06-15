@@ -12,19 +12,21 @@ h3{
 
 }
 
+hr{ margin: 0.12em auto; }
+
 h1{
-    margin-top: calc(50px + 3vw);
+    margin-top:  3vw;
     font-family: "Nunito Sans";
     font-weight: lighter;
     color: black;
-    font-size: calc(0.2rem + 3vw);
+    font-size: 3vw;
     text-align: center;
 
 }
 h2{
     font-family: 'Nunito Sans';
     text-align: center;
-    font-size:calc(0.2rem + 2vw);
+    font-size: 2vw;
 }
 h4{
     font-size: 3vw;
