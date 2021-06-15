@@ -1,6 +1,4 @@
-body{
-    background-color: white;
-} 
+
 h3{
     font-family: "Nova Square";
     color: #ff4d4d;
@@ -29,17 +27,17 @@ h2{
     font-size: 2vw;
 }
 h4{
-    font-size: 3vw;
+    font-size: calc(1.6rem + 0.5vw);
     font-family: 'Nunito Sans';
 }
 
 h5{
-    font-size: 2vw;
+    font-size: 1.3rem;
     font-family: 'Nunito Sans';
 }
 p{
     font-family: "Nunito Sans";
-    font-size: 1.3vw;
+    font-size: calc(0.9rem + 0.3vw);
     text-align: left;
 
 }
@@ -61,7 +59,3 @@ p{
 /*#get-psyche{
     background-color: rgba(211, 211, 211, 0.616);
 }*/
-
-#about-us{
-   background-color: #fff;
-}

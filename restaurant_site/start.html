@@ -16,11 +16,10 @@
          <link rel="preconnect" href="https://fonts.gstatic.com">
          <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
     </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <body class="bg-light" data-spy="scroll" data-target=".navbar" data-offset="100">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-        
         <header>
-            <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top" >
+            <nav class="navbar border navbar-expand-sm bg-light navbar-light fixed-top" >
                 <a class="navbar-brand" href="start.html">
                     <span>
                     <img src="psyche_logo.png" alt="Logo" style="width:30px; margin-left: 2vw; margin-top: -10px;">
@@ -38,9 +37,10 @@
                     <li class="nav-item nun_font" style="margin-left: 2vw;">
                       <a class="nav-link" href="#our-mission">Our Mission</a>
                     </li>
+                    <!--
                     <li class="nav-item nun_font"style="margin-left: 2vw;">
                       <a class="nav-link" href="#get-psyche">Get Psyche</a>
-                    </li>
+                    </li>-->
                     <li class="nav-item nun_font"style="margin-left: 2vw;">
                       <a class="nav-link" href="#about-us">About Us</a>
                     </li>
@@ -65,45 +65,35 @@
         </div>
     -->
     <div class="container">
-        <div id="carousel_temp" class="carousel slide" data-ride="carousel" style="margin: 65px 0 0 0;" >
-            <!--<ul class="carousel-indicators">
-                <li data-target="#carousel_temp" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel_temp" data-slide-to="1"></li>
-                <li data-target="#carousel_temp" data-slide-to="2"></li>
-              </ul> -->
+        <div id="carousel_temp" class="carousel slide" data-ride="carousel" data-interval="8000" style="margin: 76px 0 0 0;" >
             <div class="carousel-inner" style="margin: 0;">
                 <div class="carousel-item active" style="height: fit-content;">
-                    <div class="view" id="Home" style="margin-bottom:0px;background-image: url('psyche_background_real.jpg'); background-repeat: no-repeat; background-size: 100%; background-attachment: fixed; background-position:center 56px;">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12 mb-4 text-center">
-                                        <h1><strong>Welcome to </strong><span style="font-family: 'Nova Square'; color: #ff4d4d;">psyche</span></h1>
-                                        <hr style="width:25%; border-top: 1px solid black;">
-                                        <h2 style="margin-bottom: calc(35% - 60px);"><strong>Discover yourself.</strong></h2>
-                                    </div>
-                                </div>
+                    <div class="view" id="Home" style="margin-bottom:0px;background-image: url('psyche_background_real.jpg'); height:29vw; background-repeat: no-repeat; background-size: auto 29vw; background-position: center;">   
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 mb-4 text-center">
+                                <h1><strong>Welcome to </strong><span style="font-family: 'Nova Square'; color: #ff4d4d;">psyche</span></h1>
+                                <hr style="width:25%; border-top: 1px solid black;">
+                                <h2 style="margin-bottom: calc(30% - 60px);"><strong>Discover yourself.</strong></h2>
                             </div>
-            
+                        </div>
+                    </div>
                     </div>
                 </div>
-                <div class="carousel-item" style="border: 4px solid #ff4d4d !important;">
-                    <img class="img-fluid" src="Group 16.png" >
+        
+                <div class="carousel-item">
+                    <div class="view" id="Home" style= "background-image: url('slide_1.png'); background-repeat: no-repeat; height: 29vw; background-size: auto 29vw; background-position: center;">   
+                    </div>
                 </div>
-                <div class="carousel-item" style="border: 4px solid #ff4d4d !important;">
-                    <img class="img-fluid" src="Group 17 (1).png" >
+                <div class="carousel-item">
+                    <div class="view" id="Home" style= "background-image: url('slide_2.png'); background-repeat: no-repeat; height: 29vw; background-size: auto 29vw; background-position: center;">   
+                    </div>
                 </div>
             </div>
-              <!-- Left and right controls 
-            <a class="carousel-control-prev" href="#carousel_temp" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#carousel_temp" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a> -->
         </div>
     </div>
-    
-        <section id="our-mission" style="margin-top: 2px; padding-top: 56px;">
+  
+        <section id="our-mission" style="margin-top: 20px; padding-top: 56px;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 mb-4 text-center">
@@ -131,7 +121,7 @@
             
            
         </section>
-
+        <!--
         <section id="get-psyche" style="margin-top: 2px; padding-top: 56px;">
            
             <div class="container mycontainer">
@@ -156,68 +146,78 @@
             </div>
            
         </section>
-
+        -->
 
 
         <section id="about-us" style="margin-top: 2px; padding-top: 56px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 mb-4 text-center">
+                    <div class="col-sm-12 pb-4 text-center">
                         <h4 class="nun_font"> <strong>About Us</strong> </h4>
                         <p>  &nbsp; &nbsp; &nbsp; Psyche started life as our entry into the Carnegie Mellon University COVID-19 Innovation Project where we attempted to develop a solution that could help get us and everyone else through the mental health challenges that COVID caused. What we came up with would eventually become <em>Psyche:</em> an app that provides you with fun challenges to help keep you active and keep your mind stimulated. We settled on this idea because our research for the project showed that a large number of college students, including ourselves, experienced a drop in motivation as well as feeling as though they lack control due to the circumstances surrounding the pandemic. We hope the Psyche can help people like you deal with and defeat these feelings!
                         </p>
                     </div>
                 </div>
+            </div>
+            </section>
+        <section class="bg-white" style="margin-top:2px; padding-top: 20px;">
+            <div class="container bg-white">
                 <div class="row" >
-                    <div class="col-sm-12 mb-4 text-center">
+                    <div class="col-sm-12 pt-4 text-center">
                         <h4 class="nun_font"> <strong>Meet the Team</strong> </h4>
                     </div>
                 </div>
-                <div class="row" style="margin-bottom: 15px;">
-                    <div class= "col-sm-4">
-                        <img src="nick_profile.jpg" style="width: 17vw;" class="rounded-circle mx-auto d-block">
+                <div class="row pb-4 pt-4" style="margin-bottom: 15px;">
+                    <div class= "col-lg-4">
+                        <img src="nick_profile.jpg" style="width: calc(85px + 10vw);" class="rounded-circle mx-auto d-block border">
                     </div>
-                    <div class="col-sm-8 mb-4 text-center">
+                    <div class="col-lg-8 text-center">
                         <h5 class="nun_font"> <strong>Nicholas Schenk</strong> </h5>
                         <p>&nbsp; &nbsp; &nbsp; Nicholas Schenk is a rising senior at Rutgers University New Brunsiwick studying computer science with a minor in political science. Since the conclusion of the CMU COVID-19 Innovation Project, he has taken on the role of leading the development of both Psyche's website as well as our mobile app. He also is the current President of the Rutger's student chapter of Toastmasters. Outside of school Nick enjoys basketball, running, and rock climbing.
                         </p>
                     </div>
                 </div>
-
-                <div class="row" style="margin-bottom: 15px;">
-                    <div class= "col-sm-4">
-                        <img src="meet_profile.jpg" style="width: 17vw;" class="rounded-circle mx-auto d-block">
+            </div>
+        </section>
+            <div class="container">
+                <div class="row mt-4 mb-4" style="margin-bottom: 15px;">
+                    <div class= "col-lg-4">
+                        <img src="meet_profile.jpg" style="width: calc(85px + 10vw);" class="rounded-circle mx-auto d-block border">
                     </div>
-                    <div class="col-sm-8 mb-4 text-center">
+                    <div class="col-lg-8 text-center">
                         <h5 class="nun_font"> <strong>Meet Wadhwa</strong> </h5>
                         <p> &nbsp; &nbsp; &nbsp; Meet Wadhwa is a rising senior at Carnegie Mellon University studying Business Administration and Statistics with a minor in Psychology. He currently works for Bridgewater Associates as an Investment Implementation Intern. Meet, being a Carnegie Mellon student, was the one who originally heard about the CMU COVID-19 Project and assembled this team to help develop a product. Outside of school he is a giant Celtics fan and loves both watching and playing basketball!
                         </p>
                     </div>
-
+                </div>
+            </div>
+        <section class="bg-white">
+            <div class="container bg-white">
+                <div class="row pt-4 pb-4" style="margin-bottom: 15px;">
+                    <div class= "col-lg-4">
+                        <img src="larry_profile.png" style="width: calc(85px + 10vw);"  class="rounded-circle mx-auto d-block border">
                     </div>
-
-                <div class="row" style="margin-bottom: 15px;">
-                    <div class= "col-sm-4">
-                        <img src="larry_profile.png" style="width: 17vw;"  class="rounded-circle mx-auto d-block">
-                    </div>
-                    <div class="col-sm-8 mb-4 text-center">
+                    <div class="col-lg-8 text-center">
                         <h5 class="nun_font"> <strong>Lawrence Xing</strong> </h5>
                         <p>&nbsp; &nbsp; &nbsp; Larry Xing is a rising senior at Cornell University studying Environmental Science and Sustainability. He currently works as both a sustainability intern for Voiz as well as being a Project Development Intern at Safari Energy, LLC. During the project, Larry took the lead on designing our final protoype of the app which is being currently being used in development. Lawrence is a big fan of both the Knicks and the Yankees as well as being an avid golfer outside of school.</p>
                     </div>
                 </div>
-                <div class="row" style="margin-bottom: 15px;">
-                    <div class= "col-sm-4">
-                        <img src="sohil_profile.jpg" style="width: 17vw;" class="rounded-circle mx-auto d-block">
+            </div>
+        </section>
+            <div class="container">
+                <div class="row mt-4 mb-4">
+                    <div class= "col-lg-4">
+                        <img src="sohil_profile.jpg" style="width: calc(85px + 10vw);" class="rounded-circle mx-auto d-block border">
                     </div>
-                    <div class="col-sm-8 mb-4 text-center">
-                        <h5 class="nun_font"> <strong>Sohil Shah</strong> </h5>
+                    <div class="col-lg-8 text-center">
+                        <h5 class="nun_font"><strong>Sohil Shah</strong></h5>
                         <p>&nbsp; &nbsp; &nbsp; Sohil Shah is a rising senior at Emory University studying for his BS in Business Administration with a concentration in finance. Sohil currently works for Citi Bank as a Corporate and INvestment Banking Summer Analyst. Sohil was a key part of managing Pysche's financial plan to become successful. In his free time Sohil is a big fan of the Jets and Yankees, and also enjoys running.
                         </p>
                     </div>
             </div>
             
            
-        </section>
+    
 
     
 
